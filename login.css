@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5ebe5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-container {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cactus-image {
+    width: 250px;
+    height: auto;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin-bottom: 50px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register-link {
+    font-size: 14px;
+    color: #4d4d4d;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #434F42;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    display: inline-block; 
+    margin: 0 auto; 
+    text-decoration: none;
+    
+}
+
+.login-button:hover {
+    background-color: #98a596;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+        max-width: 350px;
+    }
+
+    .title {
+        font-size: 24px; 
+    }
+
+    .cactus-image {
+        width: 120px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+        max-width: 90%; 
+    }
+
+    .title {
+        font-size: 20px; 
+    }
+
+    .input-field,
+    .login-button {
+        font-size: 14px; 
+    }
+}

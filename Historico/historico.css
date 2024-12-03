@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #333;
+    padding-bottom: 80px;
+}
+
+.containers{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header {
+    background-color: #434F42;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: rgb(2, 2, 2);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin-left: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
+.title-bar {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 80px;
+}
+
+
+.plant-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plant-image {
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.plant-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.history {
+    list-style: none;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.activity {
+    font-size: 16px;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+}
+
+.toggle-history {
+    background-color: #434F42;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-history:hover {
+    background-color: #5A6654;
+}
+
+
+.add-plant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.add-plant form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.add-plant input,
+.add-plant button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-plant button {
+    background-color: #434F42;
+    color: white;
+    cursor: pointer;
+}
+
+.add-plant button:hover {
+    background-color: #45a049;
+}
+
+
+footer.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-item i {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-item span {
+    font-size: 12px;
+    color: black;
+  }
+  
+  .footer-item:hover {
+    color: #555;
+  }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .plant-image {
+        width: 100px;
+        height: 120px;
+    }
+
+    .plant-name {
+        font-size: 16px;
+    }
+
+    .activity {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .toggle-history {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .add-plant form {
+        max-width: 100%;
+    }
+
+    .add-plant input,
+    .add-plant button {
+        font-size: 14px;
+    }
+
+    .footer-item i {
+        font-size: 18px;
+    }
+
+    .footer-item span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .plant-image {
+        width: 80px;
+        height: 100px;
+    }
+
+    .title-bar h1 {
+        font-size: 18px;
+    }
+
+    .toggle-history {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .add-plant input,
+    .add-plant button {
+        font-size: 12px;
+    }
+
+    .footer-item i {
+        font-size: 16px;
+    }
+
+    .footer-item span {
+        font-size: 10px;
+    }
+}

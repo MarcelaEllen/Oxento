@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin: 0 auto;
+    background: #E1E8E6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #434F42;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: rgb(2, 2, 2);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin-left: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
+.title-bar {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.profile-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-section h2,
+.profile-section p {
+    margin: 0;
+}
+
+.profile-section .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border-top: 1px solid #E1E8E6;
+}
+
+.menu a {
+    padding: 15px;
+    border: none;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 93%;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu a span i {
+    margin-right: 8px;
+}
+
+.menu a:last-child {
+    margin-bottom: 20px;
+}
+
+footer.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  
+  .footer-item i {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-item span {
+    font-size: 12px;
+    color: black;
+  }
+  
+  .footer-item:hover {
+    color: #555;
+  }
+  
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-section img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu button {
+        padding: 10px;
+    }
+
+    .menu button span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu button {
+        padding: 8px;
+    }
+
+    .menu button span {
+        font-size: 12px;
+    }
+
+    .footer-item i {
+        font-size: 18px;
+    }
+
+    .footer-item span {
+        font-size: 10px;
+    }
+}
